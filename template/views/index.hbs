@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' href="css/styles.css">
+</head>
+
+  <body>
+    <div class='header'>
+    {{>header}}
+  </div>
+
+      <p> Enter a location for an up to date weather report </p>
+      <div id='weather-input-div'>
+        <input id='weather-input' type='text' placeholder='Location'>
+        <input id='submit' type='submit'>
+      </div>
+      <div id='forecast-results'></div>
+
+{{>footer}}
+  </body>
+
+<script src="JS/main.js"></script>
+</html>

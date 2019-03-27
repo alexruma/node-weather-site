@@ -1,0 +1,40 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0 auto;
+  padding: 0 16px;
+
+}
+
+.header{
+  margin-top:-2%;
+  margin-left:-2%;
+  padding-top:1.5%;
+  padding-left:2%;
+  background-color: #f5f5f0;
+  border-bottom: solid #eeeeee;
+  width: 110%;
+}
+.header-link{
+  margin-left:1%;
+  text-decoration:none;
+}
+.header-link:hover{
+  background-color: rgb(255, 255, 128);
+}
+footer{
+  margin-top:24px;
+  font-weight: bold;
+  background-color: #eeeeee;
+  border-top: solid black;
+
+}
+
+
+input {
+  border: 1px solid #cccccc
+}
+#submit {
+  cursor: pointer;
+  border: 1px solid;
+  
+}
