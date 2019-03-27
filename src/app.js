@@ -11,6 +11,7 @@ const geocode = require(geocodePath);
 const forecast = require(forecastPath);
 //const html= require('./src/htm-test.html')
 const app = express();
+const port = process.env.PORT || 3000
 
 
 //alternative path for views
@@ -115,6 +116,6 @@ app.get('*', (req, res) => {
 )
 });
 
-app.listen(3000, () => {
-  console.log('Server is up on port 3000')
+app.listen(port, () => {
+  console.log('Server is up on port '+ port)
 });
