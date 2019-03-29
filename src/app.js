@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 //renders index page/homepage
  app.get('', (req,res) => {
-    res.render('indexo', {
+    res.render('index', {
       title: 'Weather App',
       name: 'Alex'
     }
