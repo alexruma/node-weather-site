@@ -33,8 +33,11 @@ footer{
 input {
   border: 1px solid #cccccc
 }
+#summary-results{
+  margin-top:6px;
+}
 #submit {
   cursor: pointer;
   border: 1px solid;
-  
+
 }

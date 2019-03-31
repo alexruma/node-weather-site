@@ -78,11 +78,15 @@ const {latitude, longitude, location} = data;
 
 if (data) {
 
-  forecast.weatherGet(latitude, longitude,location, (error, data) =>{
+  forecast.weatherGet(latitude, longitude,location, (error, dataString, data, url) =>{
 
 if (data){res.send (
   {
-    forecast:data
+    forecast:dataString,
+    summary: data.daily.data[0].summary,
+    high: data.daily.data[0].temperatureMax,
+    low: data.daily.data[0].temperatureMin,
+
   }
 )
 }

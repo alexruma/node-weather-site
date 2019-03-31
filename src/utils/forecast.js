@@ -16,7 +16,7 @@ const weatherGet = (lat,long, place, callback) => {
      const temp=response.body.currently.temperature;
       const precipOdds=response.body.currently.precipProbability;
 
-      callback(undefined,`In ${place} it is currently ${temp} degrees out. There is a ${precipOdds}% chance of rain`)
+      callback(undefined,`In ${place} it is currently ${temp} degrees out. There is a ${precipOdds}% chance of rain`,response.body, url)
       }
     });
 }
