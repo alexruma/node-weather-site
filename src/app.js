@@ -42,10 +42,10 @@ app.use(express.static(path.join(__dirname, '../public')));
 
  //renders about page
 
- app.get('/about', (req,res)=>{
+ app.get('/paul', (req,res)=>{
 
-   res.render('about', {
-     title: "About",
+   res.render('paul', {
+     title: "Paultiplier",
      name: "Alex"
    })
  });
